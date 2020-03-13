@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Pratheesh PS</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    <h2>Hi, I'm Pratheesh PS</h2>
-    <p>
-        Front End Developer excited in learning new technologies and love to develop.
-    </p>
+    <section class="banner" id="section">
+        <header>
+            <a href="#" class="logo">P.</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hey, I'm <span>Pratheesh PS</span></h2>
+            <p>Front End Developer | AppViewX Inc | India</p><br>
+            <p>As a front end developer, I specialize in creating modular and scalable applications. Excited in learning new technologies, love to code and design</p>
+        </div>
+        <ul class="social">
+            <li><a rel="noopener noreferrer" href="https://www.linkedin.com/in/pratheeshpradeepkumars" target="_blank"><img src="./assets/linkedin.png" alt="L"></a></li>
+            <li><a href="#"><img src="./assets/instagram.png" alt="I"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggle() {
+            var section = document.getElementById("section");
+            var nav = document.getElementById("navigation");
+            section.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>
